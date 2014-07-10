@@ -1,0 +1,11 @@
+\contentsline {chapter}{\numberline {1}Working on Avrdude (Linux Platform)}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}\textbf {Installation Procedure}}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Unix setup paths}{3}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Download and install the developer tools }{4}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Download \& install binutils}{5}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}Download and install avr-libc}{7}{subsection.1.1.4}
+\contentsline {subsection}{\numberline {1.1.5}Download and install avrdude}{10}{subsection.1.1.5}
+\contentsline {section}{\numberline {1.2}\textbf {Compilation, Generation and loading of .hex file}}{12}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Compilation}{12}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Generation of the .hex file}{13}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Loading the .hex file}{13}{subsection.1.2.3}

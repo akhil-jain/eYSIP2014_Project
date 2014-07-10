@@ -1,0 +1,11 @@
+1) The folder named 'Kinect Based Module Development' 
+   contains the complete kinect based project.
+
+2) The folder named 'Programming Firebird V on linux' 
+   contains the complete project to Program Firebird V
+   on the linux platform.
+
+3) The folder named 'Presentations and Status Reports'
+   contains the presentations and status reports.
+
+4) Each folder has a 'Read Me.txt' to guide you through.

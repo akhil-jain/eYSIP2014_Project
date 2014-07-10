@@ -1,0 +1,8 @@
+1) The folder named 'Presentation 1' contains the 
+   first prsentation.
+
+2) The folder named 'Presentation 2' contains the
+   final presentation.
+
+3) The folder named 'Status Reports' contains the
+   individual status reports.

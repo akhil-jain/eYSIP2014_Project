@@ -1,0 +1,5 @@
+1) The folder named 'Latex Files' contains the necessary 
+   latex files to edit the manual.
+
+2) The folder named 'Manual' contains the manual for 
+   Programming Firebird V on linux platform.
