@@ -1,4 +1,7 @@
-﻿using System;
+/*This experiment is used to obtain the joint information of 20 joints of the body in the frame captured by
+the kinect and display them on screen as a skeleton.
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;

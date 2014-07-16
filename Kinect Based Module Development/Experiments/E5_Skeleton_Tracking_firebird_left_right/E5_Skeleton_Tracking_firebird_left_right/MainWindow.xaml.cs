@@ -1,4 +1,7 @@
-﻿using System;
+/*This Experiment makes the firebird move based on the position of the right elbow.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
@@ -7,7 +10,7 @@ using Microsoft.Kinect;
 using System.IO;
 using System.Text;
 
-namespace E5_Skeleton_Tracking_firebird_left_right
+namespace E4_Skeleton_Tracking_Fundamentals
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -77,11 +80,6 @@ namespace E5_Skeleton_Tracking_firebird_left_right
         /// </summary>
         private const float RenderHeight = 480.0f;
         #endregion
-
-        System.IO.Ports.SerialPort myport = new System.IO.Ports.SerialPort("COM2");
-        public static Skeleton skeleton = new Skeleton();
-        Joint rightHand = skeleton.Joints[JointType.HandRight];
-
 
         public MainWindow()
         {
@@ -174,87 +172,20 @@ namespace E5_Skeleton_Tracking_firebird_left_right
                 {
 
                     skeletons = new Skeleton[skeletonframe.SkeletonArrayLength];
-                    skeletons = new Skeleton[skeletonframe.SkeletonArrayLength];
 
                     // Copies skeleton data to an array of Skeletons, where each Skeleton contains a collection of the joints.
-                    skeletonframe.CopySkeletonDataTo(skeletons);
-
-                    double rightX = rightHand.Position.X;
-                    double rightY = rightHand.Position.Y;
-                    double rightZ = rightHand.Position.Z;
-
-                    Skeleton skeleton = skeletons[0];
-                    Joint j = skeleton.Joints[JointType.ElbowRight];
-
-                    if (j.Position.X > 0)
-                    {
-                        try
-                        {
-                            if (System.IO.Ports.SerialPort.GetPortNames().Contains("COM2"))
-                            {
-                                if (myport.IsOpen)
-                                {
-                                    myport.WriteLine("56");
-                                }
-                                else
-                                {
-                                    label4.Content = "";
-                                    myport.Open();
-                                }
-                            }
-                            else
-                            {
-                                label4.Content = "COM port does not exist";
-                            }
-                        }
-                        catch (System.InvalidOperationException)
-                        {
-                            MessageBox.Show("Unable to write to COM port");
-                        }
-                    }
-                    else
-                    {
-                        try
-                        {
-                            if (System.IO.Ports.SerialPort.GetPortNames().Contains("COM2"))
-                            {
-                                if (myport.IsOpen)
-                                {
-                                    myport.WriteLine("54");
-                                }
-                                else
-                                {
-                                    label4.Content = "";
-                                    myport.Open();
-                                }
-                            }
-                            else
-                            {
-                                label4.Content = "COM port does not exist";
-                            }
-                        }
-                        catch (System.InvalidOperationException)
-                        {
-                            MessageBox.Show("Unable to write to COM port");
-                        }
-                    }
-
-                    label1.Content = " X - " + j.Position.X;
-                    label2.Content = " Y - " + j.Position.Y;
-                    label3.Content = " Z - " + j.Position.Z;
-                    label4.Content = "Coordinates of Right Arm";
-
-                    // Copies skeleton data to an array of Skeletons, where each Skeleton contains a collection of the joints.
-                    skeletonframe.CopySkeletonDataTo(skeletons);
+                    skeletonframe.CopySkeletonDataTo(skeletons);       
                     //draw the Skeleton based on the Default Mode(Standing), "Seated"
                     if (sensor.SkeletonStream.TrackingMode == SkeletonTrackingMode.Default)
                     {
                         //Draw standing Skeleton
+                        label1.Content = " User Position - Standing";
                         DrawStandingSkeletons(skeletons);
                     }
                     else if (sensor.SkeletonStream.TrackingMode == SkeletonTrackingMode.Seated)
                     {
                         //Draw a Seated Skeleton with 10 joints
+                        label1.Content = " User Position - Seated";
                         DrawSeatedSkeletons(skeletons);
                     }
                 }
