@@ -1,0 +1,166 @@
+\documentclass[20pt]{report}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+    urlcolor=blue,
+}
+
+\begin{document}
+
+\hspace{2.5in}
+\textbf{Personal Details}
+\medskip
+
+\textbf{Name : }
+Anshul Panjabi
+\medskip
+
+
+\textbf{Email Id : }
+anshulpanjabi@gmail.com
+\medskip
+
+
+\textbf{Mobile Number : }
++91-9727242865
+\medskip
+
+
+\textbf{Title of Project : }
+Kinect Based Module Development And Programming FB-V using Linux platform
+\medskip
+
+
+\textbf{Duration of the internship : }
+26 May 2014 to 10 July 2014
+\medskip
+
+
+\textbf{Summary of your contribution to the project : }
+
+ My contribution to the project \textbf{Kinect Based Module Development} involves the design of the 
+ following 11 experiments :
+\begin{itemize}
+\item E1\_Depth\_Tracking\_on\_screen
+\item E2\_Depth\_Tracking\_on\_firebird
+\item E3\_Camera\_fundamentals
+\item E4\_Skeleton\_Tracking\_Fundamentals
+\item E5\_Skeleton\_Tracking\_firebird\_left\_right
+\item E6\_Skeleton\_Tracking\_firebird\_front\_back
+\item E7\_Skeleton\_Tracking\_angle\_between\_joints
+\item E8\_Skeleton\_Tracking\_Hoverbutton\_Firebird
+\item E9\_Skeleton\_Tracking\_Complete
+\item E10\_Voice\_Recognition\_firebird
+\item E11\_Tilt\_Demo
+\end{itemize}
+ This was complemented with documentation supported by chapter 2 and a part of 4 in the kinect manual. The final stage was completed with video demonstrations for the experiments designed.
+ 
+My contribution to the project \textbf{Programming Firebird V on Linux} involves :
+\begin{itemize}
+\item Installation of Eclipse and other necessary software on Linux.
+\item Compilation of a .c file for ARM LPC2148 platform.
+\item Generation of .hex and .bin file for ARM platform.
+\item Loading the .bin file on ARM LPC2148 using terminal in Linux.
+\end{itemize}
+ This was supported with documentation of the same in the manual reportecl.
+\medskip
+
+\vspace{0.5in}
+
+\hspace{2.5in}
+\textbf{Project Status Report}
+\medskip
+
+\textbf{Objective of the work : }
+I chose to work with the kinect as i was fascinated by it. I wanted to work on it, but didn't have the opportunity before.
+
+\medskip
+
+\textbf{Scope of the work : }
+
+Kinect Based Module Development -
+\begin{itemize}
+
+
+\item Installation of Kinect driver and softwares, on Windows and Linux.
+\item Creating Video tutorials and documentation for the same.
+\item Interfacing the Kinect sensor with FB V - Windows and Linux.
+\item Creating Video tutorials and documentation for the same.
+\item Designing and implementing a few basic experiments using FB V and Kinect.
+\item Creating Video tutorials and documentation for the same.
+\end{itemize}
+
+Programming Firebird V on linux - 
+\begin{itemize}
+
+
+\item Write and compile C program for AVR based FB V robot on Linux.
+\item Compile to generate .hex file.
+\item Create Video tutorial explaining the process.
+\item Load .hex file on robot using bootloader/AVRdude programmer from linux.
+\item Create Video tutorial explaining the process.
+\item Repeat the above steps for ARM based robot.
+\end{itemize}
+
+\medskip
+
+\textbf{Results and Discussion : }
+The completion of the project (Kinect based module development) provides an interface between the kinect sensor and the Firebird V robot with experiments ranging from easy to advanced level to give a basic understanding of programming and obtaining the data from the sensor. The major obstacles faced in the project was the unavailability of working literature for the current versions of  the used softwares. Most of the literature and online support codes were for the older versions and many of the inbuilt functions no longer had any support in the latest version.
+However, one has to continuously keep track of the latest versions of the softwares and their supported functions for the kinect sensor. Any break in progress would result in loss of continuity and people working in future may have to begin from scratch to understand the supported functions. Hence, continuous work on this project is necessary.
+
+The completion of the project (Programming Firebird V on linux) provides a platform for future work on Firebird V on the linux platform along with the flexibility of understanding the underlying terminal codes for compiling a source code, generating an executable file and loading the same on Firebird V robot.
+\medskip
+
+
+
+\textbf{Bugs (Kinect Based Module Development) :}
+\begin{itemize}
+\item Skeleton tracking at times in not Continuous.
+\item Tracking a seated skeleton requires a definite posture.
+\end{itemize}
+
+\textbf{Bugs (Programming FB V on linux) :}
+
+\begin{itemize}
+\item brltty bug in 64 bit machines.
+\item Explicit installation of libusb and libudev Libraries.
+\item Absence of the 3 math libraries.
+\item  On eclipse, ARM project cannot be built with the linker script, and without linker script it builds fine, but when loaded on the microcontroller, it won’t work.
+\end{itemize}
+
+\medskip
+
+\textbf{Future Work : }
+The current versions of the software on linux (libfreenect) doesnot support skeleton tracking and the audio templates available are not reliable and unpredictable. Hence, it would be an interesting propect to design codes once the support is available in future versions of libfreenect. Also, openCV and kinect can be connected to provide high level of customization with the help of computer vision. Also, kinect can be used for mapping and navigation while being mounted on the robot. Also, kinect can be used for 3d model scanning. Also, implementation of sequential gestures can be done.
+
+\medskip
+
+\begin{thebibliography}{99}
+\bibitem{download_sdk} \url{http://www.microsoft.com/en-in/download/details.aspx?id=40278}
+\bibitem{openkinect} \url{http://openkinect.org/wiki/Getting\_Started}
+\bibitem{visual} \url{http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx}
+\bibitem{skeleton1} \url{http://learning.codasign.com/index.php?title=Skeleton\_Tracking\_with\_the\_Kinect}
+\bibitem{video} \url{https://www.youtube.com/watch?v=AwIlr98YZgk#t=31\&hd=1}
+\bibitem{serial} \url{http://members.ee.net/brey/Serial.pdf}
+\bibitem{skeleton2} \url{http://www.dotnetfunda.com/articles/show/2069/how-to-track-skeleton-joins-using-kinect}
+\bibitem{skeleton3} \url{http://channel9.msdn.com/coding4fun/kinect/Tracking-skeleton-joins-code-sample}
+\bibitem{skeleton4} \url{http://social.msdn.microsoft.com/Forums/en-US/3f73ac86-9793-4586-9eb3-3cf2aa55fc77/c-write-kinect-joint-positions-xyz-to-txt-file?forum=kinectsdk}
+\bibitem{audio1} \url{http://stackoverflow.com/questions/14204902/record-audio-with-kinect}
+\bibitem{audio2} \url{http://channel9.msdn.com/coding4fun/kinect/Introduction-to-Kinect-Speech-Recognition}
+\end{thebibliography}
+
+\end{document}
